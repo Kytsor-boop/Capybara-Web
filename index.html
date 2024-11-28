@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capybara office</title>
+    <!-- ====================================== Css ==================================================== -->
+     <link rel="stylesheet" href="style.css">
+    <!-- ====================================== input ==================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Noto+Sans+Thai:wght@100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+    <!-- === Icon === -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <!-- ======================================== Navbar ================================================== -->
+     <nav>
+        <input type="checkbox" id="sidebar-active"> <!-- สร้าง input สำหรับการเช็คเมนู-->
+        <label for="sidebar-active" class="open-sidebar-button"> <!-- สำหรับเปิดเมนู-->
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </label>
+
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button"> <!-- สำหรับการปิดเมนูและแผงควบคุมเมนู-->
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+
+            <a href="#Capybara" class="home-link">Capybara</a>
+            <a href="#">รู้จักกับคาปิบาร่า</a>
+            <a href="#">การเลี้ยงดู</a>
+            <a href="#">พบน้องได้ที่ไหน</a>
+            <a href="#">ติดต่อเรา</a> 
+        </div>
+     </nav>
+    <!-- ====================================== Section Welcome ==================================================== -->
+
+    <header id="Capybara">
+        <div class="container">
+            <div class="header-info">
+                <h1>Welcome To Capybara Webstie</h1>
+                <div class="line"></div>
+                <p>ยินดีตอนรับบสู่เว็บไซด์ของผม ซึ่งในเว็บนี้เราจะพามารู้จักกับเจ้าคาปิบาร่าสุดน่ารักกันฮะว่าจะมีอะไร ดังนั้นเราไปดูกันดีกว่าว่ามีอะไรบ้าง</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- === About === -->
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-con">
+                <div class="title">
+                    <h1>About Capybara</h1>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <p>
+                            <span class="bold">ชื่อภาษาไทยและภาษาอังกฤษ : </span>แคพิบารา(Capybara) <br>
+                            <span class="bold">ชื่อทางวิทยาสตร์ : </span><em>hydrochoerus และ hydrochaeris </em> <br>
+                            <span class="bold">อายุขัย : </span>8-10 ปี <br>
+                            <span class="bold">ถิ่นที่อยู่ : </span>ทวีปอเมริกาใต้ยกเว้นชิลี พบกระจายพันธุ์ตั้งแต่โคลอมเบีย เวเนซุเอลา จนถึงอาร์เจนตินา <br>
+                            <span class="bold">ประเภทอาหาร : </span>พืช เช่น หญ้าและพืชน้ำ และผลไม้ <br>
+                            <span class="bold">น้ำหนัก : </span>น้ำหนักจะอยู่ที่ 35-66 กิโลกรัม เมื่อโตเต็มที่อายุประมาณ 15-18 เดือน <br>
+                            <span class="bold">ความยาวของลำตัว : </span>ประมาณ 45-60 เซนติเมตร <br>
+                            <span class="bold">สิ่งที่ชอบ : </span>ว่ายน้ำและดำน้ำ และสามารถนอนแช่น้ำได้ทั้งวันโดยไม่ขึ้นจากน้ำเว้นแต่จะออกหาอาหารในช่วงเช้าและเย็น <br>
+                            <span class="bold">ลักษณะของ Capybara : </span> แคปิบารามีลักษณะตัวเป็นทรงกระบอก ขนสั้นสีน้ำตาลแดงหรือสีน้ำตาลอมเหลืองคล้ายหนูตะเภา ไม่มีหางและมีพังผืดที่เท้า ขนสามารถมีสีตั้งแต่สีน้ำตาลอ่อนจนถึงสีดำ ตัวเมียจะหนักกว่าตัวผู้เล็กน้อย ขาหน้าจะมี 4 นิ้ว ขาหลังมี 3 นิ้วและยาวกว่าขาหน้า แคปิบาราชอบว่ายน้ำและดำน้ำ สามารถนอนแช่น้ำได้ทั้งวันโดยไม่ขึ้นจากน้ำเว้นแต่จะออกหาอาหารในช่วงเช้าและเย็น. <br>                   
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <img src="https://www.thoughtco.com/thmb/ufFuIuQ7GM8xSOPMzNhNsESjCFE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-528162130-77c8bd60ccba49dba3ca35bd7af276d8.jpg" alt="Capybara-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === Capybara breeding === -->
+     <section class="breeding">
+        <div class="container">
+            <div class="bi-con">
+                <div class="title-breed">
+                    <h1>การเลี้ยงดูคาปิบาร่า</h1>
+                </div>
+                <div class="info-breeding">
+                    <p class="para">สิ่งที่จำเป็นสำหรับเลี้ยงน้องคาปิบาร่านั้นต้องเตรียมไว้หลายๆอย่างซึ่งมันไม่ง่ายเพราะน้องก็ตัวใหญ่ด้วย ดังนั้นจะมีอะไรบ้าง งันเราไปดูกันได้เลย</p>
+                    <p class="paragram">
+                        <span class="bold">1.พื้นที่</span>แคปิบาราต้องการพื้นที่กว้างเพื่อเคลื่อนไหว โดยเฉพาะอย่างยิ่งต้องมีน้ำให้แหวกว่ายและเล่น เนื่องจากมันชอบน้ำ ควรมีสระน้ำขนาดใหญ่หรือพื้นที่ที่มีน้ำที่สะอาดให้พวกมันสามารถว่ายน้ำได้ตลอดเวลา <br>
+                        <span class="bold">2.อาหาร</span> แคปิบาราเป็นสัตว์กินพืช ควรให้อาหารที่หลากหลาย เช่น หญ้าสด, ผัก, ผลไม้, และอาหารเสริมที่มีไฟเบอร์ เพื่อให้พวกมันมีสุขภาพดี <br>
+                        <span class="bold">3.ที่พัก</span>ควรมีที่พักที่ปลอดภัยและสะดวกสบายสำหรับแคปิบารา เช่น พื้นที่นอนที่ไม่ชื้นเกินไปและสามารถหลบแดดได้ <br>
+                        <span class="bold">4.การดูแลสุขภาพ</span> ตรวจสุขภาพเป็นประจำ เช่น การฉีดวัคซีนหรือการดูแลพวกมันจากโรคต่าง ๆ นอกจากนี้ยังต้องคอยสังเกตพฤติกรรมของพวกมันเพื่อให้แน่ใจว่าไม่มีปัญหาทางสุขภาพ <br>
+                        <span class="bold">5.สังคม</span> แคปิบาราคือสัตว์ที่ชอบอยู่เป็นกลุ่ม ดังนั้น การเลี้ยงมันคนเดียวอาจทำให้มันรู้สึกเหงาหรือเครียด ควรพิจารณาการเลี้ยงหลายตัวหากมีพื้นที่เพียงพอ <br>
+                        <span class="bold">6.การดูแลขน</span> แคปิบารามีขนสั้นแต่ต้องการการดูแล ทำความสะอาดขนบ่อยๆ เพื่อป้องกันการสะสมของเชื้อโรค <br>
+                        <span class="bold">7.สภาพแวดล้อมที่ปลอดภัย</span> ต้องมั่นใจว่าไม่มีอันตรายจากสัตว์อื่น ๆ หรืออุปกรณ์ในบ้านที่อาจทำให้แคปิบาราบาดเจ็บ. <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- === พบน้องได้ที่ไหน === -->
+      <section class="location">
+        <div class="container">
+            <div class="loc-con">
+
+                <div class="location-con">
+                    <h1>แนะนำจุดไปชมน้องคาปิบาร่า</h1>
+                    <p>ในวันนี้แอดจะมาแนะนำสวนสัตว์ 3 จุดในไทยที่มีคาปิบาร่า ซึ่งแตละจุดที่แนะนำมาจ้องได้ยินหรือคุ่นๆชื่อแน่นอน ดังนั้นไปดูกันเลยว่ามีอะไรบ้าง</p>
+                </div>
+                
+                <div class="loc-flex">
+                    <div class="location-text">
+                        <h2><span class="spc">S</span>afari World</h2>
+                        <p>
+                            ที่อยู่ : ที่ตั้ง 99 ถ.ปัญญาอินทรา เขตคลองสามวา กทม. <br>
+                            เวลาเข้าชม : เวลาเปิด-ปิด 09.00 – 17.00 น. <br>
+                            ราคาเข้า : ราคาบัตร คาปิบาราอยู่โซน Marine Park ราคาผู้ใหญ่ 600 บาท / เด็ก 500 บาท <br>
+                            <a href="https://goo.gl/maps/eYeHuw6qLk7BpL7R6">Location </a>
+                        </p>
+                        <p>มาที่แรกกับสวนสัตว์ใกล้กรุงที่แรกสุดฮิต สำหรับ Safari World จะแบ่งออกเป็น 2 โซนใหญ่ๆ คือโซน Safari Park ที่เป็นโซนสวนสัตว์เปิดให้เข้าชมฟีลทุ่งหญ้าแอฟริกา เราสามารถขับรถส่วนตัวเข้าไปข้างในได้เลย ส่วนอีกโซนเป็น Marine Park ซึ่งเป็นโซนที่จะมีสัตว์น่ารักๆ รวมถึงมีการจัดแสดงความสามารถพิเศษของสัตว์ชนิดต่างๆ งั้นก็ไม่รอช้าตามไปเลย! ส่วนคาปิบาราจะอยู่โซน Marine Park นะคะทุกคน                    </p>
+                    </div>
+                    <div class="line-width"></div>
+                    <div class="location-text">
+                        <h2><span class="spc">ส</span>วนสัตว์เปิดเขาเขียว</h2>
+                        <p>
+                            ที่อยู่ : ตำบลบางพระ อำเภอศรีราชา ชลบุรี<br>
+                            เวลาเข้าชม : เปิดทุกวัน 08.00-17.00 น. <br>
+                            ราคาเข้า : ผู้ใหญ่ 150 บาท เด็ก 30 บาท | ข้าราชการ,นักเรียน,นักศึกษา 70 บาท | ผู้สูงอายุ คนพิการ เข้าฟรี <br>
+                            <a href="https://goo.gl/maps/8yVysbs8tctFUbQP8">Location </a>
+                        </p>
+                        <p> ตามมาด้วยอีกหนึ่งสวนสัตว์ใกล้กรุงเทพฯ ที่ยอดฮอตฮิตมากๆซึ่งก็จะเป็นจุดที่มีดาราชื่อดังอย่าง "หมูเด้ง" สำหรับสวนสัตว์เปิดเขาเขียว เพราะที่นี่มีพื้นที่เยอะมาก ทางสวนสัตว์ก็มีบริการรถกอล์ฟและรถรางพานั่งไปชมสัตว์ตามจุดต่างๆ ไม่ว่าจะเป็น โซนสัตว์แอฟริกัน โซนออสเตรเลีย โซนสัตว์ป่าเอเชีย และอื่นๆ ใครที่อยากเล่นกับสัตว์แบบใกล้ชิดที่นี่เขามีโซนสวนสัตว์เปิด แถมมีกิจกรรมให้ทำเยอะเลยครับ และที่สำคัญคือมีเจ้าคาปิบาราให้ไปถ่ายรูปเช็คอินชมความน่ารักอย่างใกล้ชิดด้วยครับ</p>
+                    </div>
+                    <div class="line-width"></div>
+                    <div class="location-text">
+                        <h2><span class="spc">M</span>omo Aldabra and Capybara Thailand</h2>
+                        <p>
+                            ที่อยู่ : สนามแบดมินตัน 4G ซอยบางปูวิลล่า 4 ท้ายบ้านใหม่ อำเภอเมืองสมุทรปราการ<br>
+                            เวลาเข้าชม : เปิดทุกวัน 13.00 – 18.00 น.<br>
+                            ราคาเข้า : ค่าข้าวโพด ถังละ 50 บาท<br>
+                            <a href="https://goo.gl/maps/p5SuKAg9Noyb642i9">Location </a>
+                        </p>
+                        <p>ชาวสมุทรปราการก็มีคาปิบาราให้ชมน้า ที่ Momo Aldabra and Capybara Thailand ฟาร์มสัตว์เลี้ยงที่อยู่ตรงสนามแบดมินตัน 4G มีค่าเข้า 50 บาทจะได้ข้าวโพดมาป้อนน้องๆงับ ที่นี่ยังมีสัตว์ตัวอื่นๆให้ชมด้วยน้า ใครอยู่แถวโซนนี้รีบมาเบิ่งน้องๆกันจ้า</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- === Contact === -->
+       <section class="contact">
+        <div class="con-margin">
+            <div class="container">
+                <div class="contact-title">
+                    <h1>Contact</h1>
+                </div>
+                <div class="contact-con">
+                    <div class="contact-about">
+                        <h2>About The Web</h2>
+                        <p>เว็บไซด์นี้จัดทำเพื่อเป็นผลงานของผม ในการเข้าศึกษาที่มหาวิทยาลัยมหาสารคาม คณะวิทยาการสารสนเทศ ซึ่งเว็บนี้ก็
+                            จะเกี่ยวกับน้องคาปิบาร่าหรือคาปิบารา โดยเราก็จะได้รู้เกี่ยวกับลักษณะของน้อง การเลี้ยงดู ซึ่งหัวข้ออาจะไม่คอบคลุมหรือมีปัญหาอย่างไรก้ขออภัยมานะที่นี้ด้วยนะครับ
+                        </p>
+                    </div>
+                    <div class="contact-info">
+                        <h2>ช่องทางติดต่อ</h2>
+                        <p><i class="fa fa-facebook-square" aria-hidden="true"></i> Arnuphap Riyabut</p>
+                        <p><i class="fa fa-google" aria-hidden="true"></i> Google</p>
+                    </div>
+                    <div class="credit">
+                        <h2>บรรรานุกรม</h2>
+                        <p>ข้อมูลบ้างส่วน : Chat GPT</p>
+                        <a href="https://en.wikipedia.org/wiki/Capybara">Wiki pedia</a>
+                        <a href="https://www.zipeventapp.com/blog/2023/03/22/capybara-zoo/">แนะนำสถานที่</a>
+                    </div>
+                </div>
+        </div>
+        </div>
+       </section>
+    <!-- ====================================== JavaScript ==================================================== -->
+     <script src="script.js"></script>
+</body>
+</html>

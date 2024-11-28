@@ -1,0 +1,404 @@
+:root {
+    --color-1: #333;
+    --color-2: #8C6E63;
+    --color-3: #D3A376;
+    --color-4: #FFE0B2;
+    --color-5: #FFF2DF;
+    --text-color: #f0f0f0;
+    --accent-color: #006aff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Parkinsans", sans-serif;
+    font-family: "Noto Sans Thai", serif;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+.line {
+    width: 50%; /* ความยาวของเส้น */
+    height: 3px; /* ความหนาของเส้น */
+    background-color: var(--color-5); /* สีของเส้น (เลือกสีที่เหมาะสมกับพื้นหลัง) */
+    margin: 20px auto; /* การจัดตำแหน่งเส้นให้กลาง */
+    border-radius: 5px; /* ทำให้เส้นมีมุมโค้ง (สามารถไม่ใช้ก็ได้) */
+}
+
+.line-width {
+    width: 100%; /* ความยาวของเส้น */
+    height: 3px; /* ความหนาของเส้น */
+    background-color: var(--color-2); /* สีของเส้น (เลือกสีที่เหมาะสมกับพื้นหลัง) */
+    margin: 20px auto; /* การจัดตำแหน่งเส้นให้กลาง */
+    border-radius: 5px; /* ทำให้เส้นมีมุมโค้ง (สามารถไม่ใช้ก็ได้) */
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 3vmin;
+}
+
+.spc {
+    color: var(--color-2);
+    font-size: 5.8vmin;
+}
+
+h1 {
+    font-size: 5.8vmin;
+}
+
+h2 {
+    font-size: 4.0vmin;
+}
+
+/* p {
+    font-size: 1.6vmin;
+} */
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+/* === ใช้ได้ทุกที่ === */
+
+html {
+    font-size: 12pt;
+}
+
+nav {
+    height: 60px;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+nav a {
+    font-size: 2.4vmin;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+}
+
+
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav svg {
+    fill: var(--text-color);
+}
+
+nav .home-link {
+    margin-right: auto;
+}
+
+#sidebar-active {
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
+
+.open-sidebar-button {
+    margin-left: auto;
+    padding: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 980px) {
+    .links-container {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        width: 300px;
+
+        background-color: var(--color-1);
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+    }
+
+    nav a {
+        height: auto;
+        width: 100%;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+
+    .open-sidebar-button, .close-sidebar-button{
+        display: block;
+        padding: 20px;
+    }
+
+    #sidebar-active:checked ~ .links-container {
+        display: flex;
+    }
+}
+
+/* ========================= header ====================== */
+
+header {
+    height: 100vh;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/85/Capybara_portrait.jpg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* สีดำโปร่งแสง */
+    z-index: 1; /* ใช้เพื่อให้ overlay อยู่เหนือ background image */
+
+}
+
+.header-info h1 {
+    position: relative;
+    z-index: 2; /* อยู่เหนือ overlay */
+    color: white; /* ให้ข้อความเด่นชัด */
+    font-size: 4.6vmin;
+}
+
+.header-info p {
+    font-size: 2.4vmin;
+    position: relative;
+    z-index: 2; /* อยู่เหนือ overlay */
+    color: white; /* ให้ข้อความเด่นชัด */
+}
+
+@media (max-width: 900px) {
+    .header-info p {
+        margin: 1.5rem;
+    }
+}
+
+/* === About === */
+.about {
+    height: 100vmin;
+    margin: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 2rem;
+}
+
+.col-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.col-1 h1 {
+    margin-left: 0;
+}
+
+.col-1 p {
+    margin: 0.5rem 0;
+    /* padding: 2rem 0; */
+    width: 100%;
+    font-size: 2.5vmin;
+}
+
+.col-2 img {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1080px) {
+    .about {
+        height: auto; /* ให้ความสูงอัตโนมัติ */
+        margin-top: 2rem; /* เพิ่มระยะห่างจาก header */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .col-1 p {
+        line-height: 1.6em;
+        margin: 0;
+    }
+
+    .col-2 img, .col-1 p {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+/* @media (max-width: 500px) {
+    .about {
+        margin-top: 375px;
+    }
+} */
+
+/* === การเลี้ยงดู === */
+
+.breeding {
+    background-color: #e8e8e8;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bi-con {
+    margin: 1rem;
+}
+
+.title-breed h1 {
+    margin: 0  0  1rem 0;
+}
+
+.info-breeding p {
+    font-size: 2.5vmin;
+}
+
+.paragram span.bold {
+    display: block; /* ทำให้แต่ละ span เป็นบล็อก */
+    margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างบรรทัด */
+}
+
+/* === location === */
+
+.location {
+    /* max-height: 100vmin; */
+    height: auto;
+    background-color: #ffffff;
+    /* background-color: #e6e6e6; */
+}
+
+.location-con {
+    margin: 1rem
+}
+
+.title h1 {
+    margin: 1rem;
+}
+
+.loc-flex {
+    margin: 0 1rem;
+}
+
+.location-text {
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+.location-text p {
+    font-size: 2.5vmin;
+    padding-bottom: 1.5rem;
+}
+
+.location-text a {
+    background-color: var(--color-2);
+    padding: .5rem 1rem;
+    color: var(--text-color);
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.location-text a:hover {
+    background-color: var(--color-3);
+}
+
+
+@media screen and (max-width: 980px){ 
+    .loc-flex {
+        flex-direction: column;
+    }
+}
+
+/* === Contact === */
+
+.contact {
+    background-color: #333;
+    height: auto;
+    color: #6c6c6c;
+}
+
+.con-margin {
+    margin: 1rem;
+    padding: 3rem 0;
+}
+.contact-title h1, .contact-con h2 {
+    color: #f0f0f0;
+}
+
+.contact-con {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 1rem;
+}
+
+.credit a {
+    display: block;
+    color: #6c6c6c;
+    transition: all 0.75s;
+}
+
+.contact-info p {
+    padding: 10px 0;
+    transition: all 0.75s;
+}
+
+.credit a:hover, .contact-info p:hover {
+    color: #e8e8e8;
+}
+
+@media screen and (max-width: 800) {
+    .contact-con {
+        padding: 1rem 0;
+    }
+}
